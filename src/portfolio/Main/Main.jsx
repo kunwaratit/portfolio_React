@@ -1,19 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import Nav from "../NavBar/Nav";
 import Footer from "../Footer/Footer";
 import HomeContent from "../Body/HomeContent/HomeContent";
 import Skill from "../Body/Skills/Skills";
 import "./static/main.css"
 import Contact from "../Body/Contact/Contact";
+
+import Blogs from "../Body/blog.jsx";
+
+import Menu from "../Body/Database/databaseApi";
 function Main(){
+    const[MenuData,setMenuData]=useState(Menu);
+    console.log(MenuData)
     return(<>
-    <Nav/>
-        <HomeContent/>
+    <Nav MenuData={MenuData} />
+    
+        <HomeContent MenuData={MenuData}/>
         <div class="bodyContainer">
-            <Skill/>
-            <Contact/>
+            <Skill MenuData={MenuData}/>
+            <Blogs/>
+            <Contact MenuData={MenuData}/>
         </div>
-    <Footer/>
+    <Footer />
     </>
     )
 }export default Main

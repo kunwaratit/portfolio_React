@@ -1,9 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 import "./static/HomeContent.css"
-import Menu from "../Database/databaseApi";
-function HomeContent(){
-    const[MenuData,setMenuData]=useState(Menu);
-    console.log(MenuData)
+
+function HomeContent({MenuData}){
+  
 return(
     <>
     {MenuData.map((curElem)=>{

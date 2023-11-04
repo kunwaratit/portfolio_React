@@ -1,6 +1,6 @@
 import React from "react";
 import "./static/contact.css"
-function Contact(){
+function Contact({MenuData}){
     return(<>
     <div class="cpm">
         {/* <!-- contactpageManagement --> */}

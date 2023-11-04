@@ -1,10 +1,10 @@
 
 import React,{useState} from "react";
 import "./static/skill.css"
-import Menu from "../Database/databaseApi";
+
 import Skilled from "../Database/skillApi";
-function Skill(){
-    const[MenuData,setMenuData]=useState(Menu);
+function Skill({MenuData}){
+   
     const[SkillData,setSkillData]=useState(Skilled)
     console.log(MenuData);
     console.log(SkillData);

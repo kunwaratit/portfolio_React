@@ -2,9 +2,8 @@ import React,{useState} from "react";
 import "./static/Nav.css";
 import "./static/mediaquery.css";
 import logo from './static/Icon1.png';
-import Menu from "../Body/Database/databaseApi";
-function Nav(){
-    const[MenuData,setMenuData]=useState(Menu);
+function Nav({MenuData}){
+    
     // console.log(MenuData)
     return(<>
         {MenuData.map((curElem)=>{
@@ -23,8 +22,7 @@ function Nav(){
                 <li><a href="#my-skill">Skills</a></li>
                 <li><a href="#info-content">About</a></li>
 
-                <li><a href="blog.html
-                    ">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 {/* <!-- <li><a href="#contact">Contact</a></li> --> */}
 
                 <li> <a href="gallery.html">Gallery</a> </li>
