@@ -7,5 +7,8 @@
     "main.05d60b75.css.map": "/portfolio_React/static/css/main.05d60b75.css.map",
     "main.7c9493e3.js.map": "/portfolio_React/static/js/main.7c9493e3.js.map"
   },
-
+  "entrypoints": [
+    "static/css/main.05d60b75.css",
+    "static/js/main.7c9493e3.js"
+  ]
 }
