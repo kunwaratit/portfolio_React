@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Blog from "../Database/BlogApi.js";
-import log from "../Database/javascript.jpg"
+
 import "./blog.css"
 function Blogs() {
     const [Blogdata, setBlogdata] = useState(Blog);
@@ -33,7 +33,7 @@ function Blogs() {
                                     <div className="course">
                                         <div className="courseImg">
 
-                                            <img src={log} alt="" sizes="" srcset="" />
+                                            <img src={curElem.courseImg} alt="" sizes="" srcset="" />
                                         </div>
                                         <div className="courseInfo">
 

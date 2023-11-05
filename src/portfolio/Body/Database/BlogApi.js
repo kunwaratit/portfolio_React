@@ -28,7 +28,7 @@ const Blog=[{
     id:2,
     course:"Php",
     courseInfo:"in this course we will learn about the basic PHP",
-    courseImg:"./prp.JPG",
+    courseImg:"javascript.jpg",
     headers:[{
         headerId:1,
         headerName:"",
@@ -58,7 +58,7 @@ const Blog=[{
     id:3,
     course:"CSS",
     courseInfo:"in this course we will learn about the basic css",
-    courseImg:"./prp.JPG",
+    courseImg:"prp.JPG",
     headers:[{
         headerId:1,
         headerName:"",
