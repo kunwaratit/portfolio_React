@@ -24,7 +24,7 @@ function Blogs() {
                         }</div>
 
 
-                    {Blogdata.map((curElem) => {
+                    {Blogdata.slice(0, 3).map((curElem) => {
                         return (<>
                             <div className="Bpm">
                                 {/* <!-- BlogPageManagement --> */}
