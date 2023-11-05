@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Nav from "../NavBar/Nav";
 import Footer from "../Footer/Footer";
 import HomeContent from "../Body/HomeContent/HomeContent";
@@ -6,22 +6,24 @@ import Skill from "../Body/Skills/Skills";
 import "./static/main.css"
 import Contact from "../Body/Contact/Contact";
 
-import Blogs from "../Body/blog.jsx";
+import Blogs from "../Body/Blog/blog.jsx";
 
 import Menu from "../Body/Database/databaseApi";
-function Main(){
-    const[MenuData,setMenuData]=useState(Menu);
+
+
+function Main() {
+    const [MenuData, setMenuData] = useState(Menu);
     console.log(MenuData)
-    return(<>
-    <Nav MenuData={MenuData} />
-    
-        <HomeContent MenuData={MenuData}/>
+    return (<>
+        <Nav MenuData={MenuData} />
+
+        <HomeContent MenuData={MenuData} />
         <div class="bodyContainer">
-            <Skill MenuData={MenuData}/>
-            <Blogs/>
-            <Contact MenuData={MenuData}/>
+            <Skill MenuData={MenuData} /><br />
+            <Blogs />
+            <Contact MenuData={MenuData} />
         </div>
-    <Footer />
+        <Footer />
     </>
     )
-}export default Main
+} export default Main
