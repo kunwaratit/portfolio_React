@@ -9,6 +9,7 @@ import Contact from "../Body/Contact/Contact";
 import Blogs from "../Body/Blog/blog.jsx";
 
 import Menu from "../Body/Database/databaseApi";
+import Projects from "../Body/Projects/Projects";
 
 
 function Main() {
@@ -20,6 +21,7 @@ function Main() {
         <HomeContent MenuData={MenuData} />
         <div class="bodyContainer">
             <Skill MenuData={MenuData} /><br />
+            <Projects /><br />
             <Blogs />
             <Contact MenuData={MenuData} />
         </div>

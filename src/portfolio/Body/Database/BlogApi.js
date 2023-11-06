@@ -3,7 +3,7 @@ const Blog=[{
     id:1,
     course:"Javascript",
     courseInfo:"in this course we will learn about the basic javascript",
-    courseImg:"javascript.jpg",
+    courseImg:"./Images/BlogImages/javascript.jpg",
     headers:[{
         headerId:1,
         headerName:"",
@@ -28,7 +28,7 @@ const Blog=[{
     id:2,
     course:"Php",
     courseInfo:"in this course we will learn about the basic PHP",
-    courseImg:"javascript.jpg",
+    courseImg:"./Images/BlogImages/javascript.jpg",
     headers:[{
         headerId:1,
         headerName:"",
@@ -58,7 +58,7 @@ const Blog=[{
     id:3,
     course:"CSS",
     courseInfo:"in this course we will learn about the basic css",
-    courseImg:"prp.JPG",
+    courseImg:"./Images/BlogImages/prp.JPG",
     headers:[{
         headerId:1,
         headerName:"",
@@ -88,7 +88,7 @@ const Blog=[{
     id:4,
     course:"Python",
     courseInfo:"in this course we will learn about the basic PHP",
-    courseImg:"./prp.JPG",
+    courseImg:"./Images/BlogImages/prp.JPG",
     headers:[{
         headerId:1,
         headerName:"",
