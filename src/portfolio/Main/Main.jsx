@@ -18,6 +18,17 @@ function Main() {
     return (<>
         <Nav MenuData={MenuData} />
 
+
+        <Routes>
+            <Route path='/' element={<HomeContent />} />
+            <Route path='/blog' element={<Blogs />} />
+            <Route path='/projects' element={<Projects />} />
+
+
+        </Routes>
+
+
+
         <HomeContent MenuData={MenuData} />
         <div class="bodyContainer">
             <Skill MenuData={MenuData} /><br />
