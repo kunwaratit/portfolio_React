@@ -1,8 +1,8 @@
 import React from "react";
 import Main from "./portfolio/Main/Main";
 
-import {Routes,Route, Router} from 'react-router-dom'
-import Blogs from "./portfolio/Body/Blog/blogPage";
+// import {Routes,Route, Router} from 'react-router-dom'
+import Blogs from "./portfolio/Body/Blog/BlogContent";
 import HomeContent from "./portfolio/Body/HomeContent/HomeContent";
 import Projects from "./portfolio/Body/Projects/Projects";
 class App extends React.Component{

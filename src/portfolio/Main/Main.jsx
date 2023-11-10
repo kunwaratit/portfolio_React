@@ -10,8 +10,6 @@ import Blogs from "../Body/Blog/blog.jsx";
 
 import Menu from "../Body/Database/databaseApi";
 import Projects from "../Body/Projects/Projects";
-
-
 function Main() {
     const [MenuData, setMenuData] = useState(Menu);
     console.log(MenuData)
@@ -19,14 +17,12 @@ function Main() {
         <Nav MenuData={MenuData} />
 
 
-        <Routes>
-            <Route path='/' element={<HomeContent />} />
+        {/* <Routes>
+            <Routes path='/' element={<HomeContent />} />
             <Route path='/blog' element={<Blogs />} />
             <Route path='/projects' element={<Projects />} />
-
-
         </Routes>
-
+ */}
 
 
         <HomeContent MenuData={MenuData} />

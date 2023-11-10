@@ -6,7 +6,8 @@ const Blog=[{
     courseImg:"./Images/BlogImages/javascript.jpg",
     headers:[{
         headerId:1,
-        headerName:"",
+        headerName:"Hooks",
+        // asdas:"das",
         content:{
             topic:"map():",
             code:"let arr=array.map((curElem,Index,array)=>{return()})",
