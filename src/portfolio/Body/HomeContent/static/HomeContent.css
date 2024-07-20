@@ -105,7 +105,8 @@ button:hover {
 }
 
 .projInfo:hover {
-    box-shadow: 2px 1px 4px 2px #d96a18;
+    box-shadow: 1px 1px 1px 1px #868686;
+    border-radius: 5px;
 }
 
 .projInfo h3 {

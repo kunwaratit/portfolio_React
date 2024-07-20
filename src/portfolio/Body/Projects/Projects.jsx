@@ -17,19 +17,29 @@ function Projects() {
               {ProjData.slice(0, 6).map((curElem) => {
                 return (
                   <>
+                   {/* <a className="a" href=""> */}
                     <div className="projCard">
-                      <div className="projImg">
-                        <p>heloo</p>
-                        <img src={curElem.projImg} alt="" srcset="" />
-                      </div>
-                      <div className="projInfo">
-                        <h3>{curElem.projName}</h3>
-                        <div className="projDesc">{curElem.projInfo}</div>
-                        <hr />
-                        <span className="tech"> Tools and Technology used</span>
-                        <div className="projDesc techs">{curElem.technology}</div>
-                      </div>
+                     
+                        {" "}
+                        <div className="projImg">
+                          <p>heloo</p>
+                          <a href={curElem.projLink} target="blank"><img src={curElem.projImg} alt="" srcset="" /></a>
+                        </div>
+                        <div className="projInfo">
+                          <a href={curElem.projLink} target="blank"><h3>{curElem.projName}</h3></a>
+                          <div className="projDesc">{curElem.projInfo}</div>
+                          <hr />
+                          <span className="tech">
+                            {" "}
+                            Tools and Technology used
+                          </span>
+                          <div className="projDesc techs">
+                            {curElem.technology}
+                          </div>
+                        </div>
+                      
                     </div>
+                     {/* </a> */}
                   </>
                 );
               })}{" "}

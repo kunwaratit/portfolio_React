@@ -9,12 +9,16 @@
     /* display: flex; */
 
 }
+.a{
+    text-decoration: none;
+     color: inherit;
+}
 .tech{
     font-size: small;
     font-weight: bold;
 }.techs{
     font-size: small;
-    text-wrap: wrap;
+    white-space: normal;
 }
 .projRight {
     /* display: flex; */
@@ -29,8 +33,10 @@
     border-radius: 15px;
     padding: 10px;
     margin: 5px;
-    box-shadow: 2px 1px 4px 2px rgba(131, 131, 131, 0.574);
+    /* box-shadow: 2px 1px 4px 2px rgba(131, 131, 131, 0.574); */
     flex-basis: 24%;
+    border: 1px solid rgb(158, 158, 158);
+    border: 1px solid rgb(190 188 188);
 }
 
 .projImg {
@@ -56,11 +62,19 @@
 
 
 
-.projImg:hover p {
+/* .projImg:hover p {
     position: absolute;
     color: rgb(0, 0, 0);
     display: block;
     background: rgba(139, 139, 139, 0.294);
-}.projDesc{
+} */
+.projDesc{
     text-align: justify;
+}
+.projCard h3:hover{
+    color:#ff8c00;
+}
+.projCard:hover{
+    box-shadow: 2px 1px 4px 2px rgba(131, 131, 131, 0.574);
+    border: 1px solid rgb(157 157 157);
 }
