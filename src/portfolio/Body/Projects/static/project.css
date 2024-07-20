@@ -6,17 +6,24 @@
 }
 
 .projectContainer {
-    display: flex;
+    /* display: flex; */
 
 }
-
+.tech{
+    font-size: small;
+    font-weight: bold;
+}.techs{
+    font-size: small;
+    text-wrap: wrap;
+}
 .projRight {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 
 }
 
 .projCard {
+    display: flex;
     background-color: #dbd7d7;
 
     border-radius: 15px;
@@ -27,15 +34,19 @@
 }
 
 .projImg {
-    width: 200px;
-    height: 10vw;
+    width: 250px;
+    height: 220px;
     background: #f1f1f1;
     border-radius: 15px;
 
 }
 
 .projImg img {
-    width: 200px;
+    width: 250px;
+    height: 220px;
+    border-radius: 15px;
+}.projInfo{
+    padding: 12px;
 }
 
 .projImg p {
@@ -50,4 +61,6 @@
     color: rgb(0, 0, 0);
     display: block;
     background: rgba(139, 139, 139, 0.294);
+}.projDesc{
+    text-align: justify;
 }

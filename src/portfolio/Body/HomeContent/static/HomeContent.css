@@ -110,6 +110,8 @@ button:hover {
 
 .projInfo h3 {
     text-align: center;
+    color: #262684;
+    text-decoration: dashed;
 }
 
 @media (max-width: 690px) {
