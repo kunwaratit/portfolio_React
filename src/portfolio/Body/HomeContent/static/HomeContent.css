@@ -104,10 +104,7 @@ button:hover {
 
 }
 
-.projInfo:hover {
-    box-shadow: 1px 1px 1px 1px #868686;
-    border-radius: 5px;
-}
+
 
 .projInfo h3 {
     text-align: center;
