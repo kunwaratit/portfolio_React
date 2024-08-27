@@ -4,7 +4,7 @@
     background: linear-gradient(77deg, #00000061, #000000);
     color: yellow;
     display: flex;
-    padding: 3% 10%;
+    /* padding: 3% 10%; */
     /* padding-top: 15%; */
 }
 
@@ -13,7 +13,7 @@
 }
 
 .leftHomeContent .vacant {
-    margin: 50vh;
+    margin: 40vh;
 }
 
 .leftHomeContent .value {

@@ -92,7 +92,7 @@ button:hover {
     font-family: Arial, sans-serif;
     /* background: linear-gradient(241deg, #1c4ff6, #ff0000); */
     background: linear-gradient(241deg, #003cffb5, #000000d9);
-    margin: 10% 0%;
+    /* margin: 10% 0%; */
 }
 
 @media (max-width: 768px) {

@@ -14,22 +14,20 @@ body {
 }
 
 #navbar img {
-    padding: 6px;
+    /* padding: 6px; */
     height: 40px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 #navbar {
     background: linear-gradient(167deg, #919191, #000000);
     position: sticky;
     top: 0px;
-    display: flex;
-    justify-content: space-between;
 }
 
 #navbar ul {
-    margin: 0px;
-    margin-right: 90px;
+    /* margin: 0px;
+    margin-right: 90px; */
 }
 
 #navbar ul li {
@@ -65,8 +63,6 @@ body {
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
 
 }
 

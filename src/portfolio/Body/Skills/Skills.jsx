@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./static/skill.css";
-
+import { NavLink } from "react-router-dom";
 import Skilled from "../Database/skillApi";
+import MyRoutes from "../../Routes";
 function Skill({ MenuData }) {
   const [SkillData, setSkillData] = useState(Skilled);
   console.log(MenuData);
@@ -32,73 +33,21 @@ function Skill({ MenuData }) {
                   <div className="AboutMeright">
                     <br />{" "}
                     <ul className="SEE">
-                      <li>Skill</li>
-                      <li>Experience</li>
-                      <li>Education</li>
-                    </ul>
-                    <ul className="skillul">
+                      
+                        <NavLink to="/skill"><li>Skill</li></NavLink>
+                      
                       <li>
-                        Python
-                        <div className="skillback">
-                          <div className="skill py"></div>
-                        </div>
+                        <NavLink to="/experience">Experience</NavLink>
                       </li>
                       <li>
-                        PHP
-                        <div class="skillback">
-                          <div class="skill php" width="10%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        Mysql
-                        <div class="skillback">
-                          <div class="skill Mysql" width="90%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        Javascript
-                        <div class="skillback">
-                          <div class="skill Javascript" width="75%">
-                            {" "}
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        React Js
-                        <div class="skillback">
-                          <div class="skill ReactJs" width="90%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        C++
-                        <div class="skillback">
-                          <div class="skill C++" width="90%">
-                            {" "}
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        {" "}
-                        Java
-                        <div class="skillback">
-                          <div class="skill Java" width="90%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        {" "}
-                        CSS
-                        <div class="skillback">
-                          <div class="skill CSS" width="90%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        {" "}
-                        HTML
-                        <div class="skillback">
-                          <div class="skill HTML" width="90%"></div>
-                        </div>
+                        <NavLink to="/education">Education</NavLink>
                       </li>
                     </ul>
+                    <div className="sEe">
+                      <MyRoutes/>
+
+                      
+                    </div>
                   </div>
                 </div>
 

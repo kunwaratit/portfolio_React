@@ -9,13 +9,16 @@ import Contact from "../Body/Contact/Contact";
 import Blogs from "../Body/Blog/blog.jsx";
 
 import Menu from "../Body/Database/databaseApi";
+import Project from "../Body/Database/Project.js";
 import Projects from "../Body/Projects/Projects";
+import Portfolio from "../Body/Skills/portfolio.jsx";
 function Main() {
   const [MenuData, setMenuData] = useState(Menu);
+  const [ProjData,setProjData]=useState(Project)
   console.log(MenuData);
   return (
     <>
-      <Nav MenuData={MenuData} />
+      {/* <Nav MenuData={MenuData} /> */}
 
       {/* <Routes>
             <Routes path='/' element={<HomeContent />} />
@@ -26,14 +29,15 @@ function Main() {
 
       <HomeContent MenuData={MenuData} />
       <div class="bodyContainer">
-        <Skill MenuData={MenuData} />
+        <Portfolio MenuData={MenuData}/>
+        {/* <Skill MenuData={MenuData} /> */}
         <br />
-        <Projects />
+        <Projects ProjData={ProjData} />
         <br />
         <Blogs />
         <Contact MenuData={MenuData} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

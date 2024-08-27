@@ -95,7 +95,8 @@
 }
 
 .SEE li {
-    font-size: 14px;
+    /* font-size: 14px; */
+    background-color: #9cbeff;
 }
 
 .SEE li:hover {
@@ -135,4 +136,54 @@
         width: 100%;
         padding: 0px;
     }
+}
+
+
+.skillsLang {
+    /* padding: 20px; */
+    /* display: flex;
+    justify-content: center; */
+  }
+  
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates four equal-width columns */
+    gap: 10px; /* Space between items */
+    max-width: 1000px; /* Adjust as needed */
+  }
+  
+  .skill-grid Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .skill-grid Link img{ 
+    border-radius: 5px;
+    
+  }
+
+  .SEE Link {
+    color: #262684;
+    font-weight: bold;
+    font-size: 20px;
+    text-size-adjust: revert;
+    background: #19f515;
+}
+.portfolio li{
+    list-style-type: none;
+    color: #262684;
+}
+.portfolio a{
+    text-decoration: none;
+}
+.st{
+color: black;
+}.portfolio .projCard{
+    display: block;
+}.education{
+    color: #022222;
+
+}.education span{
+    color: #6a6a6a;
 }

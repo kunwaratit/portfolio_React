@@ -1,19 +1,31 @@
 import React from "react";
 import "./static/HomeContent.css";
+import {
+  FaSquareFacebook,
+  FaLinkedin,
+  FaDiscord,
+  FaSquareGithub,
+} from "react-icons/fa6";
 
 function HomeContent({ MenuData }) {
+  const handleResumeClick = () => {
+    const resumeUrl = "/Atit_Kunwar_Resume_Full.pdf"; 
+
+    window.open(resumeUrl, '_blank');
+  };
   return (
     <>
       {MenuData.map((curElem) => {
         return (
           <>
-            <div className="homeContent" id="home" key={curElem.id}>
-              <div className="leftHomeContent ">
-                <div className="vacant"></div>
-                <div className="value">
-                  <h5>{curElem.header}</h5>
+            <div className="homeContent px-12 py-6" id="o" key={curElem.id}>
+              <div className="leftHomeContent h-auto
+              ">
+                <div className="vacant "></div>
+                <div className="value ">
+                  <h5 className="font-serif font-bold">{curElem.header}</h5>
 
-                  <h1>
+                  <h1 className="font-myFont font-bold">
                     Hi, I am{" "}
                     <span
                       style={{
@@ -25,69 +37,51 @@ function HomeContent({ MenuData }) {
                       {curElem.name}
                     </span>
                   </h1>
-                  <h4>
+                  <h4 className="font-serif font-bold">
                     from {curElem.address}. {curElem.homeContentInfo}.
                   </h4>
-                  <button className="resumeButton">View Resume</button>
+                  <button className="resumeButton" onClick={handleResumeClick}>View Resume</button>
                 </div>
               </div>
               <div className="rightHomeContent">
                 <div className="profile">
-                  <div className="userphoto"></div>
-                  <div className="userInfo">asdas</div>
-                  <div className="userconnect">
+                  <div className="userphoto "></div>
+                  <div className="userInfo ">FullStack Developer</div>
+                  <h3 className="font-semibold text-2xl">Connect with me :</h3>
+                  <div className="userconnect flex ">
                     <a href="https://github.com/kunwaratit/" target="_blank">
-                      github
+                      <FaSquareGithub
+                        className="bg-white text-black px-1"
+                        size={50}
+                      />
                     </a>
-                    <a href="">Linkedin</a>
-                    <a href="">Facebook</a>
-                    <a href="">Discord</a>
-                    <h3>Connect with me :</h3>
+                    <a
+                      href="https://www.linkedin.com/in/atit-kunwar/"
+                      target="_blank"
+                    >
+                      <FaLinkedin
+                        className="bg-white text-blue-800 px-1"
+                        size={50}
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/kunwar.atit2"
+                      target="_blank"
+                    >
+                      <FaSquareFacebook
+                        className="bg-white text-blue-500 px-1"
+                        size={50}
+                      />
+                    </a>
+                    <a href="https://discord.com/channels/@me/1108662890573086751" target="blank">
+                      <FaDiscord
+                        className="text-white bg-purple-800 px-1"
+                        size={50}
+                      />{" "}
+                    </a>
+                    
                     {/* <!--connect--> */}
-                    <div className="as">
-                      <ul id="connect" style={{ margin: "0px" }}>
-                        {/* <!--facebook--> */}
-
-                        <li id="facebook">
-                          <a
-                            href="#"
-                            title="Facebook:Atit kunwar"
-                            target="blank"
-                          >
-                            <i class="fab fa-facebook-f"></i>Fac
-                          </a>
-                        </li>
-                        {/* <!--instagram--> */}
-                        <li id="insta">
-                          <a
-                            href="https://instagram.com/kunwar_atit"
-                            target="blank"
-                          >
-                            <i class="fab fa-instagram"></i>
-                          </a>
-                        </li>
-                        {/* <!--github--> */}
-                        <li>
-                          <a
-                            href="https://github.com/kunwaratit"
-                            target="blank"
-                            title="Github:kunwaratit"
-                          >
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </li>
-                        {/* <!--twitter--> */}
-                        <li id="twitter">
-                          <a
-                            href="https://twitter.com/Atitkunwar2"
-                            target="blank"
-                            title="twitter:atitkunwar2"
-                          >
-                            <i class="fab fa-twitter"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="ProjectInfo">

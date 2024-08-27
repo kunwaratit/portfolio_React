@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./static/Nav.css";
 import "./static/mediaquery.css";
 import logo from "./static/Icon1.png";
+import { NavLink, Link } from "react-router-dom";
 function Nav({ MenuData }) {
   // console.log(MenuData)
   return (
@@ -9,40 +10,54 @@ function Nav({ MenuData }) {
       {MenuData.map((curElem) => {
         return (
           <>
-            <div id="navbar">
-              <a href="#">
-                <ul className="logo">
+            <div id="navbar" className="flex flex-wrap justify-between">
+              <Link to="/">
+                <ul className="logo flex justify-center mx-20">
                   <img
                     src={logo}
                     alt=""
                     style={{ borderRadius: "30px", background: "#ffffff" }}
                   />
-                  <h5>{curElem.companyName}</h5>
+                  <h5 className=" font-serif font-bold mx-0 my-1 text-3xl align-middle text-justify">
+                    {curElem.companyName}
+                  </h5>
                 </ul>
-              </a>
-              <ul className="nav">
+              </Link>
+              <ul className="nav mx-20">
                 <li>
-                  <a href="#home">Home</a>
+                  <NavLink to="/home/#o" className="font-serif">
+                    Home
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a href="#cv">Portfolio</a>
+                  <NavLink to="/home/#projects" className="font-serif">
+                    Projects
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#my-skill">Skills</a>
+                  {/* <NavLink to="#my-skill" className="font-serif">Skills</NavLink> */}
                 </li>
                 <li>
-                  <a href="#info-content">About</a>
+                  <NavLink to="/home/#info-content" className="font-serif">
+                    About
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a href="blog.html">Blog</a>
+                  <NavLink to="blog.html" className="font-serif">
+                    Blog
+                  </NavLink>
                 </li>
-                {/* <!-- <li><a href="#contact">Contact</a></li> --> */}
+                <li>
+                  {" "}
+                  <Link to="/home/#contact">Contact</Link>{" "}
+                </li>
+                {/* <!-- <li><NavLink to="#contact">Contact</NavLink></li> --> */}
 
                 <li>
                   {" "}
-                  <a href="gallery.html">Gallery</a>{" "}
+                  <NavLink to="/gallery">Gallery</NavLink>{" "}
                 </li>
               </ul>
             </div>
