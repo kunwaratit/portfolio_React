@@ -28,7 +28,7 @@ function Portfolio({ MenuData }) {
         <div className="projectPage">
           <div className="projectContainer">
             <div className="projLeft">
-              <h3 className="font-bold">About Me</h3>
+              <h3 className="font-bold text-3xl ">About Me</h3>
             </div>
             <div className="projRight">
               <ul className="portfolio">

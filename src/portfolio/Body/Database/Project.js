@@ -2,7 +2,7 @@ const Project = [
   {
     id: 1,
     projName: "Blood Management System",
-    projImg: "/Images/projImages/Cryptographyf.png",
+    projImg: "",
     projInfo:
       "Blood management System is an web platform to locate the interested donor, and the requests form the patients.Html,css,javascript and php is used",
     technology: "HTML, CSS, JS, PHP",

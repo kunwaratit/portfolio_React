@@ -29,6 +29,7 @@ const MyRoutes = () => {
 
       <Routes>
         <Route path="/home" element={<Main />} />
+        <Route path="/" element={<Main />} />
         {/* <Route path='/home'/> */}
         {/* <Route path='/' element={<Mskill/>}/> */}
 

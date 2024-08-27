@@ -16,7 +16,7 @@ function Projects() {
           <div className="projectContainer">
             <div className="projLeft">
               {" "}
-              <h3 className="font-bold">Projects</h3>
+              <h3 className="font-bold text-3xl">Projects</h3>
             </div>{" "}
             <div className="projRight">
               {ProjData.slice(0, 6).map((curElem) => {
