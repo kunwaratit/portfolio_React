@@ -28,20 +28,20 @@ function Portfolio({ MenuData }) {
         <div className="projectPage">
           <div className="projectContainer">
             <div className="projLeft">
-              <h3 className="font-bold text-3xl ">About Me</h3>
+              <h3 className="font-bold text-3xl text-blue-950 ">About Me</h3>
             </div>
             <div className="projRight">
-              <ul className="portfolio">
+              <ul className="portfolio ">
                 <li className="ase" onClick={() => toggleDropdown("skill")}>
                   <div className="projCard cursor-pointer">
-                    <h3 className="font-semibold   flex " title="Explore my skills">Skill <IoMdArrowDropdownCircle className="self-center " /> </h3>
+                    <h3 className="font-semibold   flex text-black" title="Explore my skills  ">Skill <IoMdArrowDropdownCircle className="self-center " /> </h3>
                     {dropdownVisible === "skill" && <Mskill />}
                   </div>
                 </li>
 
-                <li className="ase" onClick={() => toggleDropdown("education")}>
+                <li className="ase " onClick={() => toggleDropdown("education")}>
                   <div className="projCard"> 
-                    <h3 className="font-semibold cursor-pointer flex"> Education<IoMdArrowDropdownCircle className="self-center " /></h3>
+                    <h3 className="font-semibold cursor-pointer flex text-black"> Education<IoMdArrowDropdownCircle className="self-center " /></h3>
                     {dropdownVisible === "education" && <Education />}
                   </div>
                 </li>
@@ -51,7 +51,7 @@ function Portfolio({ MenuData }) {
                   onClick={() => toggleDropdown("experience")}
                 >
                   <div className="projCard">
-                    <h3 className="font-semibold cursor-pointer flex">Experience <IoMdArrowDropdownCircle className="self-center " /></h3>
+                    <h3 className="font-semibold cursor-pointer flex text-black">Experience <IoMdArrowDropdownCircle className="self-center " /></h3>
                     {dropdownVisible === "experience" && <Experience />}
                   </div>
                 </li>

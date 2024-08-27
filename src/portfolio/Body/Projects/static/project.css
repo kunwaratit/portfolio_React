@@ -28,7 +28,7 @@
 
 .projCard {
     display: flex;
-    background-color: #dbd7d7;
+    /* background-color: #dbd7d7; */
 
     border-radius: 15px;
     padding: 10px;

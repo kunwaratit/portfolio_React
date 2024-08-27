@@ -1,8 +1,8 @@
 .contact-container {
     width: 50%;
-    margin: 8vh 5vh 8vh 0vh;
+    /* margin: 8vh 5vh 8vh 0vh; */
     padding: 20px 40px;
-    background-color: #ffffff4b;
+    /* background-color: #ffffff4b; */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -15,12 +15,12 @@
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #ffffffe6;
+    /* background-color: #ffffffe6; */
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
-    border: 1.5px solid #d679ff;
-    border-radius: 10px;
+    /* border: 1.5px solid #d679ff; */
+    border-radius: 4px;
     font-size: 18px;
 
 }
@@ -35,8 +35,8 @@ input[type="email"]:focus,
 textarea:focus {
     /* border: none; */
     /* background-color: red; */
-    border-width: 2px !important;
-    border-color: #d679ff !important;
+    /* border-width: 2px !important; */
+    /* border-color: #d679ff !important; */
 }
 
 button {
@@ -64,15 +64,15 @@ button:hover {
 }
 
 .contactPage li {
-    padding: 5px 0px;
-    margin: 0px 20px;
+    /* padding: 5px 0px;
+    margin: 0px 20px; */
     /* color: #1c4ff6; */
 
 }
 
 .contactPage li a {
-    color: #587ae9;
-    font-weight: 600;
+    /* color: #587ae9;
+    font-weight: 600; */
 }
 
 .contactMsg {
@@ -80,18 +80,18 @@ button:hover {
     width: 50%;
     /* background-color: red; */
     margin: 8vh 0 8vh 5vh;
-    padding: 25px 55px;
-    background-color: #ffffff16;
-    border-radius: 2%;
+    /* padding: 25px 55px; */
+    /* background-color: #ffffff16; */
+    /* border-radius: 2%; */
     /* opacity: 85%; */
-    color: #fff;
+    /* color: #fff; */
 
 }
 
 .contactPage {
     font-family: Arial, sans-serif;
     /* background: linear-gradient(241deg, #1c4ff6, #ff0000); */
-    background: linear-gradient(241deg, #003cffb5, #000000d9);
+    /* background: linear-gradient(241deg, #003cffb5, #000000d9); */
     /* margin: 10% 0%; */
 }
 

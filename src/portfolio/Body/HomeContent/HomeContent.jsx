@@ -18,7 +18,7 @@ function HomeContent({ MenuData }) {
       {MenuData.map((curElem) => {
         return (
           <>
-            <div className="homeContent px-12 py-6" id="o" key={curElem.id}>
+            <div className="homeContent px-12 py-8" id="o" key={curElem.id}>
               <div className="leftHomeContent h-auto
               ">
                 <div className="vacant "></div>
